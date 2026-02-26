@@ -1,5 +1,5 @@
-const Chat = require("../models/Chat");
-const Thread = require("../models/Thread");
+const Chat = require("../models/chat");
+const Thread = require("../models/thread");
 const asyncHandler = require("../utils/asyncHandler");
 const { getIO, onlineUsers } = require("../socket/socket");
 
@@ -41,7 +41,7 @@ exports.sendMessage = asyncHandler(async (req, res) => {
 
   res.status(201).json(chat);
 
-  
+
 });
 
 // GET MESSAGES BY THREAD
