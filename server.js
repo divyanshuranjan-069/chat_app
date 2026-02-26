@@ -17,7 +17,7 @@ initSocket(server);
 // middleware
 app.use(cors());
 app.use(express.json({ limit: "5mb" }));
-app.use(express.static("public"));
+app.use(express.static("src/public"));
 app.use(morgan("dev"));
 
 // routes
