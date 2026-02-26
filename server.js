@@ -24,7 +24,7 @@ app.use(morgan("dev"));
 app.use("/api/chat", chatRoutes);
 
 // health
-app.get("/", (req, res) => res.send("Chat API Running"));
+// app.get("/", (req, res) => res.send("Chat API Running"));
 
 // error middleware
 app.use(errorMiddleware);
